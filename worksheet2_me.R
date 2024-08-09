@@ -56,3 +56,13 @@ Msc = function(n)
 Msc(Roll)
 
 
+#Q.8
+x = 0:10
+plot(x, x, xlab="X",ylab="Y",type="l")
+
+
+
+
+
+
+
