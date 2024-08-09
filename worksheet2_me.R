@@ -56,10 +56,20 @@ Msc = function(n)
 Msc(Roll)
 
 
-#Q.8
+#Q.7
 x = 0:10
 plot(x, x, xlab="X",ylab="Y",type="l")
 
+
+#Q.8
+n = 1:1000
+func = numeric(length=length(n))
+for(i in 1:1000)
+{
+    func[i] = (1+(1/i))^i
+}
+plot(n,func)
+abline(h=exp(1),col="red")
 
 
 
