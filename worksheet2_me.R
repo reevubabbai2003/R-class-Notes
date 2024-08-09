@@ -32,3 +32,27 @@ check = seat$Roll.No. < 1e7
 length(check)
 sum(check)
 
+
+# Q.5
+seat = read.csv("seating.csv")
+head(seat)
+install.packages("readxl")
+library(readxl)
+head(seat)
+colnames(seat)
+seat$Roll.No
+
+Roll = seat$Roll.No
+count = 0
+Msc = function(n)
+{
+  for(i in 1:length(n))
+  if(n[i] > 999999)
+  {
+    count = count + 1
+  }
+  return(count)
+}
+Msc(Roll)
+
+
